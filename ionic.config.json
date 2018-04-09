@@ -1,0 +1,8 @@
+{
+  "name": "rlaw",
+  "app_id": "89ae2a67",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
