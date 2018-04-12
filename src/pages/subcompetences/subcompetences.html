@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{competence.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <div padding>
+      <p> {{competence.description}}
+      </p>
+
+    </div>
+    <ion-card *ngFor="let competence of competence.subCompetences" (click)="competenceTapped($event, competence)">
+      <ion-card-header>
+        <ion-icon [name]="competence.icon" item-start></ion-icon>
+        {{competence.title}}
+      </ion-card-header>
+      <ion-card-content>
+        <div class="item-note" item-end>
+          {{competence.description}}
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+</ion-content>
