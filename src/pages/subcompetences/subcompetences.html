@@ -17,8 +17,12 @@
     </div>
     <ion-card *ngFor="let competence of competence.subCompetences" (click)="competenceTapped($event, competence)">
       <ion-card-header>
+        <ion-fab  *ngIf="competence.subCompetences && competence.subCompetences.length" right edge >
+          <button ion-fab mini><ion-icon name="arrow-forward"></ion-icon></button>
+        </ion-fab>
         <ion-icon [name]="competence.icon" item-start></ion-icon>
         {{competence.title}}
+        <ion-icon *ngIf="competence.subCompetences && competence.subCompetences.length" name="arrow-dropright-circle"></ion-icon>
       </ion-card-header>
       <ion-card-content>
         <div class="item-note" item-end>

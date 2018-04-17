@@ -22,6 +22,7 @@ export class SubcompetencesPage {
 
   competenceTapped(event, competence) {
     // That's right, we're pushing to ourselves!
+    if(competence.subCompetences && competence.subCompetences.length>0)
     this.navCtrl.push(SubcompetencesPage, {
       competence
     });
