@@ -17,17 +17,12 @@
 
 <ion-content padding>
   <ion-list>
-      <!-- <button ion-item *ngFor="let competence of competences" (click)="competenceTapped($event, competence)">
-        <ion-icon [name]="competence.icon" item-start></ion-icon>
-        {{competence.title}}
-        <div class="item-note" item-end>
-          {{competence.description}}
-        </div>
-      </button> -->
     <ion-card *ngFor="let competence of competences" (click)="competenceTapped($event, competence)">
       <ion-card-header >
         <ion-icon [name]="competence.icon" item-start></ion-icon>
         {{competence.title}}
+        <ion-icon *ngIf="competence.subCompetences && competence.subCompetences.length" name="arrow-dropright-circle"></ion-icon>
+ 
       </ion-card-header>
       <ion-card-content>
         <div class="item-note" item-end>

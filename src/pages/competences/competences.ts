@@ -22,75 +22,80 @@ export class CompetencesPage {
     this.competences = [
       {
         title: 'Civil',
-        description: 'Familia, propiedad y arrendamiento',
         icon: 'home',
         subCompetences: [
           {
             title: 'Familia',
             icon: '',
-            description: '',
+            description: `Divorcios 
+            Modificación de medidas 
+            Ejecución de sentencias.
+            División de cosa común
+            `,
             subCompetences: [
 
             ],
           },
-          { title: 'Propiedad horizontal',
-          icon: '',
-          description: '',
-          subCompetences: [
+          {
+            title: 'Propiedad horizontal',
+            icon: '',
+            description: `Impugnación acuerdos tomados en Junta
+            Reclamación de daños a la comunidad o tercero causante de daños
+            Reclamación de cuotas de la comunidad a propietarios deudores
+            `,
+           
+          },
+          {
+            title: 'Deshaucios, extinción de contrato',
+            icon: '',
+            description: `Desahucio express por impago de renta.
+            Resolución de contrato de arrendamiento.
+            Reclamación indemnización por daños en la vivienda.
+            Reclamación al propietario por daños de mejora.
+            `,
 
-          ],
-         },
-          { title: 'Deshaucios, extinción de contrato',
-          icon: '',
-          description: '',
-          subCompetences: [
+          },
+          {
+            title: 'Reclamaciones contractuales o extracontractuales',
+            icon: '',
+            subCompetences: [
+              {  title: 'SEGUROS',
+              icon: '',
+              description: `Reclamación de la cobertura de un siniestro.`,
+            },
+              {  title: 'COMPRAVENTA',
+              icon: '',
+              description: `Reclamación de arras por duplicado.`,
+            },
+              {  title: 'Deudas',
+              icon: '',
+              description: `Reclamaciones de deudas en general`,
+            },
+              {  title: 'Indemnizaciones',
+              icon: '',
+              description: `Reclamaciones de indemnizaciones por accidentes de tráfico.`,
+            },
+            ],
 
-          ],
-         },
-          { title: 'Reclamaciones de cantidad',
-          icon: '',
-          description: '',
-          subCompetences: [
-
-          ],
-         },
-          { title: 'Reconocimiento de derecho' ,
-          icon: '',
-          description: '',
-          subCompetences: [
-
-          ],
-        },
+          },
+        
         ],
       },
       {
         title: 'Laboral',
         icon: 'briefcase',
         description: 'Conciliación laboral, cálculo indemnización y liquidación',
-        subCompetences: [
-
-        ],
       },
       {
         title: 'Administrativo',
         icon: 'paper',
         description: 'Reclamación impuesto de PLUSVALIA por indebido',
-        subCompetences: [
-
-        ],
-      },
-      {
-        title: 'Asesoramiento',
-        icon: 'medkit',
-        description: 'Falta descripción y ejemplos',
-        subCompetences: [
-
-        ],
       },
     ]
   }
   competenceTapped(event, competence) {
     // That's right, we're pushing to ourselves!
+    if(competence.subCompetences && competence.subCompetences.length>0)
     this.navCtrl.push(SubcompetencesPage, {
       competence
     });
@@ -103,10 +108,11 @@ export class CompetencesPage {
 
 export class Competence {
   title: string;
-  description: string;
+  description?: string;
   icon: string;
-  subCompetences: Array<Competence>;
-  constructor({ title, description, icon, subCompetences }) {
+  subCompetences?: Array<Competence>;
+  background?: String;
+  constructor({ title, description, icon, subCompetences, background }) {
     this.title = title;
     this.description = description;
     this.icon = icon;
