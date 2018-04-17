@@ -18,11 +18,14 @@
 <ion-content padding>
   <ion-list>
     <ion-card *ngFor="let competence of competences" (click)="competenceTapped($event, competence)">
-      <ion-card-header >
+      <ion-card-header icon-right>
         <ion-icon [name]="competence.icon" item-start></ion-icon>
         {{competence.title}}
+              <ion-fab  *ngIf="competence.subCompetences && competence.subCompetences.length" right  >
+                  <button ion-fab mini color="light"><ion-icon name="arrow-forward"></ion-icon></button>
+                </ion-fab>
         <ion-icon *ngIf="competence.subCompetences && competence.subCompetences.length" name="arrow-dropright-circle"></ion-icon>
- 
+        
       </ion-card-header>
       <ion-card-content>
         <div class="item-note" item-end>
@@ -31,11 +34,5 @@
         </ion-card-content>
     </ion-card>
   </ion-list>
-  <div *ngIf="selectedCompetence" padding>
-    Esto es una chorrada que te dice cual fue tu último elemento seleccionado: <b>{{selectedCompetence.title}}</b>
-    <h2>Subcompetencias:</h2>
-    <p *ngFor="let subcompetence of selectedCompetence.subCompetences">
-      {{subcompetence.title}}
-    </p>
-  </div>
+  
 </ion-content>
