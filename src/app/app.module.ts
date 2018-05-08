@@ -10,6 +10,7 @@ import {SubcompetencesPage} from '../pages/subcompetences/subcompetences';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   providers: [
     StatusBar,
+    EmailComposer,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
