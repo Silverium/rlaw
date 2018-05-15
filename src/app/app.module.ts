@@ -6,7 +6,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { CompetencesPage } from '../pages/competences/competences';
-import {SubcompetencesPage} from '../pages/subcompetences/subcompetences';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,7 +17,6 @@ import { EmailComposer } from '@ionic-native/email-composer';
     HomePage,
     AboutPage,
     CompetencesPage,
-    SubcompetencesPage,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +28,6 @@ import { EmailComposer } from '@ionic-native/email-composer';
     HomePage,
     CompetencesPage,
     AboutPage,
-    SubcompetencesPage,
   ],
   providers: [
     StatusBar,

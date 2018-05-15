@@ -18,21 +18,21 @@
 <ion-content padding>
   <ion-list>
     <ion-card *ngFor="let competence of competences" (click)="competenceTapped($event, competence)">
-      <ion-card-header icon-right>
+      <ion-card-header icon-right text-center>
         <ion-icon [name]="competence.icon" item-start></ion-icon>
         {{competence.title}}
-              <ion-fab  *ngIf="competence.competences && competence.competences.length" right  >
-                  <button ion-fab mini color="light"><ion-icon name="arrow-forward"></ion-icon></button>
-                </ion-fab>
-        <ion-icon *ngIf="competence.competences && competence.competences.length" name="arrow-dropright-circle"></ion-icon>
-        
       </ion-card-header>
       <ion-card-content>
-        <div class="item-note" item-end>
-          {{competence.description}}
-        </div>
-        </ion-card-content>
+        <ion-list>
+          <button ion-item *ngIf="competence.competences && competence.competences.length" text-wrap>
+            {{competence.description}}
+          </button>
+          <div *ngIf="!competence.competences || !competence.competences.length"  color="light">
+            {{competence.description}}
+          </div>
+        </ion-list>
+      </ion-card-content>
     </ion-card>
   </ion-list>
-  
+
 </ion-content>

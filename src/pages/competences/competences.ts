@@ -22,6 +22,7 @@ export class CompetencesPage {
         {
           title: 'Civil',
           icon: 'home',
+          description: 'Civil, familia, propiedad horizontal, deshaucios',
           competences: [
             {
               title: 'Familia',
@@ -57,6 +58,7 @@ export class CompetencesPage {
             {
               title: 'Reclamaciones contractuales o extracontractuales',
               icon: '',
+              description:'Seguros, compraventa, deudas, indemnizaciones',
               competences: [
                 {
                   title: 'SEGUROS',
