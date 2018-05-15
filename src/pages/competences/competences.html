@@ -21,10 +21,10 @@
       <ion-card-header icon-right>
         <ion-icon [name]="competence.icon" item-start></ion-icon>
         {{competence.title}}
-              <ion-fab  *ngIf="competence.subCompetences && competence.subCompetences.length" right  >
+              <ion-fab  *ngIf="competence.competences && competence.competences.length" right  >
                   <button ion-fab mini color="light"><ion-icon name="arrow-forward"></ion-icon></button>
                 </ion-fab>
-        <ion-icon *ngIf="competence.subCompetences && competence.subCompetences.length" name="arrow-dropright-circle"></ion-icon>
+        <ion-icon *ngIf="competence.competences && competence.competences.length" name="arrow-dropright-circle"></ion-icon>
         
       </ion-card-header>
       <ion-card-content>

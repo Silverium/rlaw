@@ -8,14 +8,28 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>rLaw</h3>
+  <ion-card>
+    <img src="../../assets/imgs/bannerRlaw.jpg" />
+    <ion-card-title text-center>
+      Rlaw abogados
+    </ion-card-title>
+    <ion-card-content>
+      <p text-justify>
+        Ahora necesito Una bonita página de inicio con un diseño sencillo y directo. Aquí debajo tenemos accesos directos a las páginas principales
+      </p>
+      <ion-grid>
+        <ion-row text-center>
+          <ion-col >
+            <button ion-button (click)="goTo('competences')" outline dark>Competencias</button>
+          </ion-col>
+          <ion-col >
+            <button  ion-button (click)="goTo('about')" outline dark>Contacto</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-  <p>
-Ahora necesito contenidos
-  </p>
+    </ion-card-content>
+  </ion-card>
 
-  <button ion-button (click)="goToCompetences()" outline dark>Competencias</button>
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-  
+
 </ion-content>
-
