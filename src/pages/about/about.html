@@ -32,10 +32,13 @@
       <ion-label stacked>Consulta:</ion-label>
       <ion-input type="textArea" [(ngModel)]="cuerpoEmail"></ion-input>
     </ion-item>
-    <button ion-button primary (click)="sendEmail()">Enviar</button>
+    <ion-item text-center>
+      <button ion-button primary (click)="sendEmail()">Enviar</button>
+      
+    </ion-item>
   </ion-card>
 
-  <ion-card>
+  <ion-card text-center>
     <ion-card-header>
       Por teléfono
     </ion-card-header>
@@ -53,8 +56,8 @@
       </p>
     </ion-item>
 
-    <ion-item>
-      <button ion-button color="secondary" onclick="window.open('tel:900123123', '_system');" outline>
+    <ion-item text-center>
+      <button ion-button large color="secondary" onclick="window.open('tel:900123123', '_system');" outline>
         <ion-icon name="call" start></ion-icon>
         900123123
       </button>
