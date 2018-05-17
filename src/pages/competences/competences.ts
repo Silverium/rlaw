@@ -101,14 +101,14 @@ export class CompetencesPage {
   competenceTapped(event, competence) {
     // That's right, we're pushing to ourselves!
     if (competence.competences && competence.competences.length > 0) {
-      console.log(competence)
+      // console.log(competence)
       this.navCtrl.push(CompetencesPage, {
         competences: competence.competences
       });
     }
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CompetencesPage');
+    // console.log('ionViewDidLoad CompetencesPage');
   }
 
 }
