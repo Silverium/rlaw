@@ -7,64 +7,70 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-card>
-    <ion-card-header text-center>
-      Por correo electrónico
-    </ion-card-header>
-    <ion-item text-wrap>
-     
+<ion-content  padding>
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7>
 
-        Si deseas contactarnos por correo electrónico, completa el siguiente formulario y nos comunicaremos contigo dentro de las siguientes 24h hábiles.
-      
-    </ion-item>
-
-
-    <ion-item>
-      <ion-label stacked>Nombre y apellidos:</ion-label>
-      <ion-input type="text" [(ngModel)]="nombreApellidos"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label stacked>Nº de teléfono:</ion-label>
-      <ion-input type="tel" [(ngModel)]="telefono"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label stacked>Consulta:</ion-label>
-      <ion-input type="textArea" [(ngModel)]="cuerpoEmail"></ion-input>
-    </ion-item>
-    <ion-item text-center>
-      <button ion-button primary (click)="sendEmail()">Enviar</button>
-      
-    </ion-item>
-  </ion-card>
-
-  <ion-card text-center>
-    <ion-card-header>
-      Por teléfono
-    </ion-card-header>
-
-    <ion-item text-center>
-      <h2>HORARIO</h2>
-      <p>
-        De Lunes a Viernes de 10 a 14h
-      </p>
-      <p>
-        De Lunes a Jueves de 16h a 19h
-      </p>
-      <p>
-        Citas disponibles bajo petición
-      </p>
-    </ion-item>
-
-    <ion-item text-center>
-      <button ion-button large color="secondary" onclick="window.open('tel:900123123', '_system');" outline>
-        <ion-icon name="call" start></ion-icon>
-        900123123
-      </button>
-    </ion-item>
-
-  </ion-card>
+        <ion-card>
+          <ion-card-header text-center>
+            Por correo electrónico
+          </ion-card-header>
+          <ion-item text-wrap>
 
 
+            Si deseas contactarnos por correo electrónico, completa el siguiente formulario y nos comunicaremos contigo dentro de las siguientes 24h hábiles.
+
+          </ion-item>
+
+
+          <ion-item>
+            <ion-label stacked>Nombre y apellidos:</ion-label>
+            <ion-input type="text" [(ngModel)]="nombreApellidos"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label stacked>Nº de teléfono:</ion-label>
+            <ion-input type="tel" [(ngModel)]="telefono"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label stacked>Consulta:</ion-label>
+            <ion-input type="textArea" [(ngModel)]="cuerpoEmail"></ion-input>
+          </ion-item>
+          <ion-item text-center>
+            <button ion-button large primary (click)="sendEmail()">Enviar</button>
+
+          </ion-item>
+        </ion-card>
+
+        <ion-card text-center>
+          <ion-card-header>
+            Por teléfono
+          </ion-card-header>
+
+          <ion-item text-center>
+            <h2>HORARIO</h2>
+            <p>
+              De Lunes a Viernes de 10 a 14h
+            </p>
+            <p>
+              De Lunes a Jueves de 16h a 19h
+            </p>
+            <p>
+              Citas disponibles bajo petición
+            </p>
+          </ion-item>
+
+          <ion-item text-center>
+            <button ion-button large color="secondary" onclick="window.open('tel:900123123', '_system');" outline>
+              <ion-icon name="call" start></ion-icon>
+              900123123
+            </button>
+          </ion-item>
+
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

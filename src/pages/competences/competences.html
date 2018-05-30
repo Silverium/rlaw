@@ -17,7 +17,7 @@
 
 <ion-content padding>
   <ion-grid>
-    <ion-row text-center>
+    <ion-row justify-content-center>
       <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 *ngFor="let competence of competences">
 
         <ion-card (click)="competenceTapped($event, competence)">
@@ -33,7 +33,7 @@
                 <ion-icon name="arrow-forward" item-end></ion-icon>
 
               </ion-item>
-              <ion-item *ngIf="!competence.competences || !competence.competences.length" color="light">
+              <ion-item *ngIf="!competence.competences || !competence.competences.length" text-wrap color="light">
                 {{competence.description}}
               </ion-item>
             </ion-list>
