@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { StaticData } from '../../app/services/static-data.service';
 
 /**
  * Generated class for the CompetencesPage page.
@@ -11,92 +12,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-competences',
-  templateUrl: 'competences.html',
+  templateUrl: 'competences.html'
 })
 export class CompetencesPage {
   selectedCompetences: Competence;
   competences: Array<Competence>;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.competences = navParams.get('competences') ||
-      [
-        {
-          title: 'Civil',
-          icon: 'home',
-          description: 'Civil, familia, propiedad horizontal, deshaucios',
-          competences: [
-            {
-              title: 'Familia',
-              icon: '',
-              description: `Divorcios 
-            Modificación de medidas 
-            Ejecución de sentencias.
-            División de cosa común
-            `,
-              competences: [
-
-              ],
-            },
-            {
-              title: 'Propiedad horizontal',
-              icon: '',
-              description: `Impugnación acuerdos tomados en Junta
-            Reclamación de daños a la comunidad o tercero causante de daños
-            Reclamación de cuotas de la comunidad a propietarios deudores
-            `,
-
-            },
-            {
-              title: 'Deshaucios, extinción de contrato',
-              icon: '',
-              description: `Desahucio express por impago de renta.
-            Resolución de contrato de arrendamiento.
-            Reclamación indemnización por daños en la vivienda.
-            Reclamación al propietario por daños de mejora.
-            `,
-
-            },
-            {
-              title: 'Reclamaciones contractuales o extracontractuales',
-              icon: '',
-              description:'Seguros, compraventa, deudas, indemnizaciones',
-              competences: [
-                {
-                  title: 'SEGUROS',
-                  icon: '',
-                  description: `Reclamación de la cobertura de un siniestro.`,
-                },
-                {
-                  title: 'COMPRAVENTA',
-                  icon: '',
-                  description: `Reclamación de arras por duplicado.`,
-                },
-                {
-                  title: 'Deudas',
-                  icon: '',
-                  description: `Reclamaciones de deudas en general`,
-                },
-                {
-                  title: 'Indemnizaciones',
-                  icon: '',
-                  description: `Reclamaciones de indemnizaciones por accidentes de tráfico.`,
-                },
-              ],
-
-            },
-
-          ],
-        },
-        {
-          title: 'Laboral',
-          icon: 'briefcase',
-          description: 'Conciliación laboral, cálculo indemnización y liquidación',
-        },
-        {
-          title: 'Administrativo',
-          icon: 'paper',
-          description: 'Reclamación impuesto de PLUSVALIA por indebido',
-        },
-      ]
+  dummy: Object;
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public dataService: StaticData
+  ) {
+    this.dummy = dataService.dummy();
+    dataService.getCompetences().then(data => {
+      this.competences = navParams.get('competences') || data; // Maybe would be wiser to init competences with an [] with default data and then pushing or splicing it.
+    });
   }
   competenceTapped(event, competence) {
     // That's right, we're pushing to ourselves!
@@ -109,8 +39,8 @@ export class CompetencesPage {
   }
   ionViewDidLoad() {
     // console.log('ionViewDidLoad CompetencesPage');
+    console.log('dummy:', this.dummy);
   }
-
 }
 
 export class Competence {

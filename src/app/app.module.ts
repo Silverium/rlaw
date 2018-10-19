@@ -11,6 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { EmailComposer } from '@ionic-native/email-composer';
 
+import { StaticData } from './services/static-data.service';
 @NgModule({
   declarations: [
     MyApp,
@@ -33,7 +34,8 @@ import { EmailComposer } from '@ionic-native/email-composer';
     StatusBar,
     EmailComposer,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    StaticData,
   ]
 })
-export class AppModule {}
+export class AppModule { }
