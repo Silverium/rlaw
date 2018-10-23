@@ -19,3 +19,44 @@
   background-color: #ebeff0!important;
   background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23abaaac' fill-opacity='0.37' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
+$screen-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+@each $keySize, $valueSize in $screen-breakpoints {
+  [hidden-#{$keySize}] {
+      @media (min-width: $valueSize) {
+          display: none;
+      }
+  }
+}
+
+@each $keySize, $valueSize in $screen-breakpoints {
+  [visible-block-#{$keySize}] {
+      @media (min-width: $valueSize) {
+          display: block;
+      }
+  }
+}
+
+@each $keySize, $valueSize in $screen-breakpoints {
+  [visible-inline-block-#{$keySize}] {
+      @media (min-width: $valueSize) {
+          display: inline-block;
+      }
+  }
+}
+@each $breakpoint in map-keys($screen-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $screen-breakpoints);
+
+  @include media-breakpoint-up($breakpoint, $screen-breakpoints) {
+      // Provide `[hidden-{bp}]` attributes for floating the element based
+      // on the breakpoint
+      [hidden#{$infix}] {
+          display: none !important;
+      }
+  }
+}
