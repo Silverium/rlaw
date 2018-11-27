@@ -1,4 +1,9 @@
 page-home {
+  ion-card-content {
+  img#abogado{
+   max-width: 50vw;
+   background: cyan; 
+ }}
   ion-content{
     @extend .background-pattern
 

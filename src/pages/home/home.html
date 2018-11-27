@@ -13,16 +13,31 @@
       <ion-col col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7>
 
         <ion-card>
-          <img src="../../assets/imgs/bannerRlaw.jpg" />
+          <img src="assets/imgs/bannerRlaw.svg" />
           <ion-card-title text-center>
             Rlaw abogados
           </ion-card-title>
           <ion-card-content>
-            <p text-justify>
-                El éxito se basa en la EFICACIA PROFESIONAL. Logramos de una forma ágil y
-                competente asesorarte. Tus intereses se convierten en los nuestros y velamos por
-                ellos.
-            </p>
+              <ion-grid>
+                  <ion-row>
+                    <ion-col col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10>
+                        <p text-justify>
+                            El éxito se basa en la EFICACIA PROFESIONAL. Logramos de una forma ágil y competente asesorarte. Tus
+                            intereses se convierten en los nuestros
+                            y velamos por ellos.
+                          </p>
+                          <p>Formamos parte del Ilustre Colegio de Abogados de Barcelona.</p>
+                    </ion-col>
+                    <ion-col visible-block-xs hidden-sm  col-3 col-sm-hide col-md-hide col-lg-hide>
+
+                    </ion-col>
+                    <ion-col col-6 col-offset-3 col-sm-3 col-md-3 col-lg-2 col-xl-2>
+                        <img id="abogado" src="assets/imgs/abogado.jpg" />
+
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+
             <ion-grid>
               <ion-row text-center>
                 <ion-col>
@@ -30,6 +45,9 @@
                 </ion-col>
                 <ion-col>
                   <button ion-button (click)="goTo('about')" outline dark>Contacto</button>
+                </ion-col>
+                <ion-col>
+                  <button ion-button (click)="goTo('blog')" outline dark>Blog</button>
                 </ion-col>
               </ion-row>
             </ion-grid>
