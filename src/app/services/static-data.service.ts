@@ -61,7 +61,6 @@ export class StaticData {
   constructor() {}
 
   dummy() {
-    console.log('I do something useful!');
     return { dummy: 'information' };
   }
   async getCompetences() {

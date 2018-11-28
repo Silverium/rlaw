@@ -17,13 +17,11 @@ import { StaticData } from '../../app/services/static-data.service';
 export class CompetencesPage {
   selectedCompetences: Competence;
   competences: Array<Competence>;
-  dummy: Object;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public dataService: StaticData
   ) {
-    this.dummy = dataService.dummy();
     dataService.getCompetences().then(data => {
       this.competences = navParams.get('competences') || data; // Maybe would be wiser to init competences with an [] with default data and then pushing or splicing it.
     });
@@ -31,15 +29,10 @@ export class CompetencesPage {
   competenceTapped(event, competence) {
     // That's right, we're pushing to ourselves!
     if (competence.competences && competence.competences.length > 0) {
-      // console.log(competence)
       this.navCtrl.push(CompetencesPage, {
         competences: competence.competences
       });
     }
-  }
-  ionViewDidLoad() {
-    // console.log('ionViewDidLoad CompetencesPage');
-    console.log('dummy:', this.dummy);
   }
 }
 
@@ -48,7 +41,7 @@ export class Competence {
   description?: string;
   icon: string;
   competences?: Array<Competence>;
-  background?: String;
+  background?: string;
   constructor({ title, description, icon, competences, background }) {
     this.title = title;
     this.description = description;
