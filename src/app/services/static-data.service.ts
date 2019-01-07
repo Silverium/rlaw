@@ -3,7 +3,7 @@ const defaultCompetences = [
   {
     title: 'Legal',
     icon: 'school',
-    description: 'Civil, Laboral, Administrativo, Laboral.',
+    description: 'Asesoramiento jurídico sobre todos los ámbitos del derecho.',
     competences: [
       {
         title: 'Civil',
@@ -62,7 +62,7 @@ const defaultCompetences = [
   {
     title: 'Contable',
     icon: 'calculator',
-    description: 'Civil, Laboral, Administrativo, Laboral.',
+    description: 'Asesoramiento a emprendedores (empresas y autónomos).',
     competences: [
       {
         title: 'Altas y bajas de autónomos',
