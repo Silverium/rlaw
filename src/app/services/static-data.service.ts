@@ -74,7 +74,7 @@ const defaultCompetences = [
         title: 'Empresas',
         icon: 'briefcase',
         description:
-          'Asesoramiento en la creación de nuevas empresas. Tramitación de subvenciones.'
+          'Asesoramiento en la creación de nuevas empresas. Tramitación de subvenciones. Punto de acceso a emprendedores, a través de la plataforma Circe, te ayudamos a la creación de tu negocio.'
       },
       {
         title: 'Declaraciones de renta',
@@ -85,7 +85,7 @@ const defaultCompetences = [
       {
         title: 'Obtención de Certificados',
         icon: 'medal',
-        description: `Facilitamos certificados digitales del Fondo Nacional de Moneda y Timbre para tu empresa.
+        description: `Facilitamos certificados digitales de la Fábrica Nacional de Moneda y Timbre para tu empresa.
 Obtención de Certificaciones mercantiles, notas simple de fincas, certificados de nacimiento, matrimonio y defunción.`
       }
     ]

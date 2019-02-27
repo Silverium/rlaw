@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="es"
       dir="ltr">
 
 <head>
@@ -37,6 +37,19 @@
         .catch(err => console.error('Error', err));
     }
   </script>-->
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCSF6kYYg0dqvGdYkNaQuhvMLdJn39oRQs",
+    authDomain: "ionic-webpage.firebaseapp.com",
+    databaseURL: "https://ionic-webpage.firebaseio.com",
+    projectId: "ionic-webpage",
+    storageBucket: "ionic-webpage.appspot.com",
+    messagingSenderId: "575524828971"
+  };
+  firebase.initializeApp(config);
+</script>
 
   <link href="build/main.css"
         rel="stylesheet">
