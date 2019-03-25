@@ -6,8 +6,10 @@ import { NavController } from "ionic-angular";
   templateUrl: "legal.html"
 })
 export class LegalPage {
+    year: Number;
   constructor(
     public navCtrl: NavController,
-  ) {}
-
+  ) {
+    this.year = new Date().getFullYear();
+  }
 }
