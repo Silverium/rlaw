@@ -1016,7 +1016,7 @@ cordova-android@7.1.2:
     shelljs "0.5.3"
     xmlbuilder "8.2.2"
 
-cordova-browser@^5.0.4:
+cordova-browser@5.0.4:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/cordova-browser/-/cordova-browser-5.0.4.tgz#a89d1f37a89c66c83af6ad90e8d62e57dec0ce60"
   integrity sha512-EDuG+9NGsaYpNSY6wF0kR34m1m38V+nRglGXxQ609fgMYrMHEYR2lg38nDr1Os4qeF0LJz8UQ7nq7Y+idg6Aig==
@@ -2242,10 +2242,10 @@ ionic-angular@3.9.2:
   resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-3.9.2.tgz#75053e4a422aaae7d7cd668cc92cfd5cb29d38cc"
   integrity sha512-BEZ6magY1i5GwM9ki/MOpszUz62+g518HsGICtw9TE1D4v9Eb6n/o7e+X0vtvpK4TdouFjQ8r5XA9VPAKW9/+Q==
 
-ionicons@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-3.0.0.tgz#40b8daf4fd7a31150bd002160f66496e22a98c3c"
-  integrity sha1-QLja9P16MRUL0AIWD2ZJbiKpjDw=
+ionicons@4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-4.5.1.tgz#a180e8948256e6337c2d290eb07f9113dc7b09eb"
+  integrity sha512-zqfkjpPKsdzzXePdE03IRw6xt7B6N3fcN/7NepyniuEWhKZLy7YpdZLegEwBmKeciXi7rIcv1O/hHJTdokUwXQ==
 
 ipaddr.js@1.6.0:
   version "1.6.0"
@@ -4029,7 +4029,7 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
-semver@*, "semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.3.0, semver@^5.4.1:
+"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.3.0, semver@^5.4.1:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
   integrity sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==

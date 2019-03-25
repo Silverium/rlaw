@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
+import { LegalPage } from '../pages/legal/legal';
 import { CompetencesPage } from '../pages/competences/competences';
 
 @Component({
@@ -25,6 +26,7 @@ export class MyApp {
       { title: 'Inicio', component: HomePage },
       { title: 'Competencias', component: CompetencesPage },
       { title: 'Contacto', component: AboutPage },
+      { title: 'Aviso Legal', component: LegalPage },
     ];
 
   }
