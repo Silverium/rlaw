@@ -6,7 +6,7 @@ import { NavController } from "ionic-angular";
   templateUrl: "legal.html"
 })
 export class LegalPage {
-    year: Number;
+    year: number;
   constructor(
     public navCtrl: NavController,
   ) {

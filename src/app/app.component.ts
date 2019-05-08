@@ -18,6 +18,8 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
+  legal: any;
+
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
@@ -26,8 +28,8 @@ export class MyApp {
       { title: 'Inicio', component: HomePage },
       { title: 'Competencias', component: CompetencesPage },
       { title: 'Contacto', component: AboutPage },
-      { title: 'Aviso Legal', component: LegalPage },
     ];
+    this.legal ={ title: 'Aviso Legal', component: LegalPage }
 
   }
 

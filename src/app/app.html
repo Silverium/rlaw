@@ -13,6 +13,9 @@
       <button menuClose ion-item onclick="window.open('https://rlawcatalunya.blogspot.com', '_system', 'location=yes')">
        Blog
       </button>
+      <button menuClose ion-item  (click)="openPage(legal)">
+        {{legal.title}}
+      </button>
     </ion-list>
   </ion-content>
 
