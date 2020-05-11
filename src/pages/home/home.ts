@@ -8,7 +8,7 @@ import { AboutPage } from '../about/about';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) { }
   goToCompetences() {
     this.navCtrl.push(CompetencesPage);
   }
@@ -18,6 +18,24 @@ export class HomePage {
         return this.navCtrl.push(CompetencesPage);
       case 'about':
         return this.navCtrl.push(AboutPage);
+      case 'instagram':
+        return window.open(
+          'https://www.instagram.com/rlaw_consultoresyabogados/',
+          '_system',
+          'location=yes'
+        );
+      case 'twitter':
+        return window.open(
+          'https://twitter.com/AbogadosRlaw',
+          '_system',
+          'location=yes'
+        );
+      case 'wordpress':
+        return window.open(
+          'https://wordpress.com/view/rlawconsultoraabogados.wordpress.com',
+          '_system',
+          'location=yes'
+        );
       case 'blog':
         return window.open(
           'https://rlawcatalunya.blogspot.com',

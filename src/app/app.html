@@ -5,20 +5,44 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content >
+  <ion-content>
     <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
-      <button menuClose ion-item onclick="window.open('https://rlawcatalunya.blogspot.com', '_system', 'location=yes')">
-       Blog
+      <button
+        menuClose
+        ion-item
+        onclick="window.open('https://www.instagram.com/rlaw_consultoresyabogados/', '_system', 'location=yes')"
+      >
+        <ion-icon name="logo-instagram"></ion-icon> Instagram
       </button>
-      <button menuClose ion-item  (click)="openPage(legal)">
+      <button
+        menuClose
+        ion-item
+        onclick="window.open('https://twitter.com/AbogadosRlaw', '_system', 'location=yes')"
+      >
+        <ion-icon name="logo-twitter"></ion-icon> Twitter
+      </button>
+      <button
+        menuClose
+        ion-item
+        onclick="window.open('https://wordpress.com/view/rlawconsultoraabogados.wordpress.com', '_system', 'location=yes')"
+      >
+        <ion-icon name="logo-wordpress"></ion-icon> WordPress
+      </button>
+      <button
+        menuClose
+        ion-item
+        onclick="window.open('https://rlawcatalunya.blogspot.com', '_system', 'location=yes')"
+      >
+        <ion-icon name="open"></ion-icon> Blog
+      </button>
+      <button menuClose ion-item (click)="openPage(legal)">
         {{legal.title}}
       </button>
     </ion-list>
   </ion-content>
-
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
