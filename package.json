@@ -1,65 +1,65 @@
 {
-    "name": "rlaw",
-    "version": "0.0.1",
-    "author": "Soldeplata Saketos Candela, soldeplatadeveloper@gmail.com",
-    "description": "Rlaw S.L. Abogados",
-    "homepage": "http://rlaw.es/",
-    "private": true,
-    "scripts": {
-        "build": "ionic-app-scripts build",
-        "clean": "ionic-app-scripts clean",
-        "deploy": "ionic build --production && firebase deploy",
-        "ionic:build": "ionic-app-scripts build",
-        "ionic:serve": "ionic-app-scripts serve",
-        "lint": "ionic-app-scripts lint"
+  "name": "rlaw",
+  "version": "0.0.1",
+  "author": "Soldeplata Saketos Candela, soldeplatadeveloper@gmail.com",
+  "description": "Rlaw S.L. Abogados",
+  "homepage": "http://rlaw.es/",
+  "private": true,
+  "scripts": {
+    "build": "ionic-app-scripts build",
+    "clean": "ionic-app-scripts clean",
+    "deploy": "ionic build --production && firebase deploy",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve",
+    "lint": "ionic-app-scripts lint"
+  },
+  "dependencies": {
+    "@angular/animations": "5.2.9",
+    "@angular/common": "5.2.9",
+    "@angular/compiler": "5.2.9",
+    "@angular/compiler-cli": "5.2.9",
+    "@angular/core": "5.2.9",
+    "@angular/forms": "5.2.9",
+    "@angular/http": "5.2.9",
+    "@angular/platform-browser": "5.2.9",
+    "@angular/platform-browser-dynamic": "5.2.9",
+    "@ionic-native/core": "4.6.0",
+    "@ionic-native/email-composer": "^4.17.0",
+    "@ionic-native/splash-screen": "4.6.0",
+    "@ionic-native/status-bar": "4.6.0",
+    "@ionic/pro": "^2.0.3",
+    "@ionic/storage": "2.1.3",
+    "cordova-android": "7.1.2",
+    "cordova-browser": "5.0.4",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-email-composer": "^0.8.15",
+    "cordova-plugin-ionic": "5.2.7",
+    "cordova-plugin-ionic-keyboard": "^2.1.3",
+    "cordova-plugin-ionic-webview": "^2.2.5",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "ionic-angular": "3.9.2",
+    "ionicons": "4.5.1",
+    "rxjs": "5.5.8",
+    "sw-toolbox": "3.6.0",
+    "web": "0.0.2",
+    "zone.js": "0.8.20"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "^3.2.1",
+    "typescript": "~2.6.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-whitelist": {}
     },
-    "dependencies": {
-        "@angular/animations": "5.2.9",
-        "@angular/common": "5.2.9",
-        "@angular/compiler": "5.2.9",
-        "@angular/compiler-cli": "5.2.9",
-        "@angular/core": "5.2.9",
-        "@angular/forms": "5.2.9",
-        "@angular/http": "5.2.9",
-        "@angular/platform-browser": "5.2.9",
-        "@angular/platform-browser-dynamic": "5.2.9",
-        "@ionic-native/core": "4.6.0",
-        "@ionic-native/email-composer": "^4.17.0",
-        "@ionic-native/splash-screen": "4.6.0",
-        "@ionic-native/status-bar": "4.6.0",
-        "@ionic/pro": "^2.0.3",
-        "@ionic/storage": "2.1.3",
-        "cordova-android": "7.1.2",
-        "cordova-browser": "5.0.4",
-        "cordova-plugin-device": "^2.0.2",
-        "cordova-plugin-email-composer": "^0.8.15",
-        "cordova-plugin-ionic": "5.2.7",
-        "cordova-plugin-ionic-keyboard": "^2.1.3",
-        "cordova-plugin-ionic-webview": "^2.2.5",
-        "cordova-plugin-splashscreen": "^5.0.2",
-        "cordova-plugin-whitelist": "^1.3.3",
-        "ionic-angular": "3.9.2",
-        "ionicons": "4.5.1",
-        "rxjs": "5.5.8",
-        "sw-toolbox": "3.6.0",
-        "web": "0.0.2",
-        "zone.js": "0.8.20"
-    },
-    "devDependencies": {
-        "@ionic/app-scripts": "^3.2.1",
-        "typescript": "~2.6.2"
-    },
-    "cordova": {
-        "plugins": {
-            "cordova-plugin-device": {},
-            "cordova-plugin-ionic-keyboard": {},
-            "cordova-plugin-ionic-webview": {},
-            "cordova-plugin-splashscreen": {},
-            "cordova-plugin-whitelist": {}
-        },
-        "platforms": [
-            "android",
-            "browser"
-        ]
-    }
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  }
 }
