@@ -13,9 +13,6 @@
       <ion-col col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7>
         <ion-card>
           <img src="assets/imgs/bannerRlaw.jpg" alt="rLaw banner" />
-          <ion-card-title text-center>
-            Rlaw Consultoría & Abogados
-          </ion-card-title>
           <ion-card-content>
             <ion-grid>
               <ion-row>
@@ -82,48 +79,38 @@
                   </button>
                 </ion-col>
               </ion-row>
-              <ion-row class="ion-justify-content-between">
+              <ion-row class="ion-justify-content-evenly social-links">
                 <ion-col>
-                  <button
-                    ion-button
-                    (click)="goTo('instagram')"
-                    outline
-                    dark
-                    block
-                  >
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-label>Instagram</ion-label>
-                  </button>
+                  <a href="#">
+                    <img
+                      (click)="goTo('instagram')"
+                      src="assets/instagram.png"
+                    />
+                  </a>
                 </ion-col>
                 <ion-col>
-                  <button
-                    ion-button
-                    (click)="goTo('twitter')"
-                    outline
-                    dark
-                    block
-                  >
-                    <ion-icon slot="start" name="logo-twitter"></ion-icon>
-                    <ion-label>Twitter</ion-label>
-                  </button>
+                  <a href="#">
+                    <img
+                      (click)="goTo('twitter')"
+                      src="assets/twitter.png"
+                    />
+                  </a>
                 </ion-col>
                 <ion-col>
-                  <button
-                    ion-button
-                    (click)="goTo('wordpress')"
-                    outline
-                    dark
-                    block
-                  >
-                    <ion-icon name="logo-wordpress"></ion-icon>
-                    <ion-label>Wordpress</ion-label>
-                  </button>
+                  <a href="#">
+                    <img
+                      (click)="goTo('wordpress')"
+                      src="assets/wordpress.png"
+                    />
+                  </a>
                 </ion-col>
                 <ion-col>
-                  <button ion-button (click)="goTo('blog')" outline dark block>
-                    <ion-icon name="open"></ion-icon>
-                    <ion-label>Blog</ion-label>
-                  </button>
+                  <a href="#">
+                    <img
+                      (click)="goTo('blog')"
+                      src="assets/blog.png"
+                    />
+                  </a>
                 </ion-col>
               </ion-row>
             </ion-grid>
