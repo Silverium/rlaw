@@ -11,7 +11,8 @@
     "deploy": "ionic build --production && firebase deploy",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "lint": "ionic-app-scripts lint"
+    "lint": "ionic-app-scripts lint",
+    "gh-docs": "ionic build --browser --prod && rm -r ./docs && cp ./www ./docs/"
   },
   "dependencies": {
     "@angular/animations": "5.2.9",
